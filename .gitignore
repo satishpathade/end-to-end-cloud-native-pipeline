@@ -1,15 +1,10 @@
-node_modules/
-npm-debug.log
 .env
 .DS_Store
 coverage/
 *.log
 .vscode/
-.idea/
 terraform/.terraform/
 terraform/*.tfstate
 terraform/*.tfstate.backup
 terraform/.terraform.lock.hcl
-*.pem
-*.ppk
 kubeconfig

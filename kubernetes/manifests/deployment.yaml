@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: end-to-end-pipeline
+  labels:
+    app: end-to-end-pipeline
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: end-to-end-pipeline
+  template:
+    metadata:
+      labels:
+        app: end-to-end-pipeline
+    spec:
+      containers:
+      - name: end-to-end-pipeline
+        image: satishpathade/end-to-end-pipeline:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "production"

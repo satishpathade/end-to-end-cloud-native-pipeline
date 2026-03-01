@@ -5,5 +5,4 @@
 *.tfstate
 *.tfstate.*
 .terraform.lock.hcl
-
 kubeconfig

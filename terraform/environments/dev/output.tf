@@ -38,3 +38,4 @@ output "infrastructure_info" {
     }
   }
 }
+

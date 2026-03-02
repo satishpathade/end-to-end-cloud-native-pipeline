@@ -27,8 +27,6 @@ resource "aws_instance" "jenkins" {
     volume_type = "gp3"
   }
 
-#   user_data = templatefile("${path.module}/user-data/jenkins.sh", {})
-
   tags = {
     Name = "${var.project_name}-jenkins"
     Role = "jenkins"
